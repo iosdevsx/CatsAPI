@@ -8,13 +8,6 @@
 
 import Foundation
 
-struct RandomCat: Codable {
-    let id: String
-    let url: String
-    let width: Int
-    let height: Int
-}
-
 protocol ICatsViewModel {
     var catsCount: Int { get }
     var reloadAction: (() -> ())? { get set }
@@ -45,7 +38,6 @@ class CatsViewModel {
 }
 
 extension CatsViewModel: ICatsViewModel {
-    
     func fetchRandomCat() {
         
         guard !isLoading else {

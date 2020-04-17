@@ -8,6 +8,13 @@
 
 import Foundation
 
+struct RandomCat: Codable {
+    let id: String
+    let url: String
+    let width: Int
+    let height: Int
+}
+
 struct Paging {
     let limit: Int
     var page: Int

@@ -10,6 +10,7 @@ import UIKit
 
 class CatsController: UICollectionViewController {
     typealias CatCell = CollectionCellContainer<CatView>
+    
     private var viewModel: ICatsViewModel
     
     private var previewLayout: VerticalFlowLayout
@@ -73,6 +74,4 @@ extension CatsController {
         
         return cell
     }
-    
-    
 }
